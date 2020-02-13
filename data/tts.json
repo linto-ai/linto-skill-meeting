@@ -1,0 +1,16 @@
+{
+  "en-US": {
+    "say": {
+      "start": "Meeting has been started",
+      "stop": "Meeting has been stoped",
+      "status_unk": "Sorry i don't know what to say"
+    }
+  },
+  "fr-FR": {
+    "say": {
+      "start": "Une réunion a commencé",
+      "stop": "Fin de la réunion",
+      "status_unk": "Désolé je ne sais pas quoi répondre"
+    }
+  }
+}
