@@ -25,14 +25,14 @@ module.exports = async function (msg) {
         this.wireEvent.notify(`${this.config.z}-${TO_UI}`, htmlPayload)
       }, this.config.uiInterval)
     }
-    return { say: `${tts.say.start}` }
+    return { say: tts.say.start }
   } else if (this.payloadAction.checkEntitiesRequire(msg.payload, ['action_stop'])) {
     if (this.config.ui && this.meetingsInterval) {
       clearInterval(this.meetingsInterval)
       this.meetingsInterval = undefined
     }
-    return { say: `${tts.say.stop}` }
+    return { say: tts.say.stop }
   }
 
-  return { say: `${tts.say.status_unk}` }
+  return { say: tts.say.status_unk }
 }
